@@ -17,11 +17,5 @@ Die Lerninhalte werden durch Gamification-Ansätze, visuelle Elemente und alters
 - **Wissensabfrage:** Internetführerschein zur Überprüfung und Festigung der vermittelten Inhalte.
 
 ---
-### Lokale Installation
-1. **Repository klonen:**
-   ```bash
-   git clone https://github.com/USERNAME/REPOSITORY.git
-   cd REPOSITORY
-
-### Demo
+## Demo
 [Demo](https://halu1031.github.io/Quinn/)
