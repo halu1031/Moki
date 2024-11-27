@@ -23,6 +23,14 @@ header {
     /* Höhe des Headers festlegen */
 }
 
+.index-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: calc(100vh - 60px);
+    /* Verhindert das Überfließen des Main-Bereichs */
+}
+
 .logo {
     min-width: 200%;
     height: auto;
