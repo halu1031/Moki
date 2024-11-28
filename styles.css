@@ -167,3 +167,7 @@ button {
 button:hover {
     background: linear-gradient(to right, #F49404, #F9B93C);
 }
+
+.h5p-content {
+    margin: 0px 200px;
+}
