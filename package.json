@@ -1,0 +1,16 @@
+{
+  "name": "quinn",
+  "version": "1.0.0",
+  "description": "## Projektbeschreibung",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./*.html",
+    "build": "parcel build ./*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  }
+}
