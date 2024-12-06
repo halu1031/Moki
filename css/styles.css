@@ -21,6 +21,7 @@ header {
     height: 100px;
     top:0;
     position: sticky;
+    z-index: 1000;
 }
 
 h1 {
@@ -65,40 +66,30 @@ nav ul li img {
 nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
 }
 
 .container {
     display: flex;
-    height: calc(100vh - 100px);
-    /* Anpassung an die Header-Höhe */
-    overflow: hidden;
-    /* Verhindert Scrollen des gesamten Containers */
+    
 }
 
 .side-nav {
-    flex: 0 0 30%;
-    /* Fixiert die Breite der Side-Navigation auf 30% */
+    flex: 0 0 40%;
     background-color: #FFECCE;
-    padding: 10px;
+    padding: 24px;
+    padding-right: 40px;
     clip-path: polygon(99.798% 0%, 0% 0%, 0% 100%, 99.891% 100%, 99.891% 100%, 99.969% 98.809%, 99.58% 97.545%, 98.833% 96.183%, 97.835% 94.7%, 96.694% 93.071%, 95.519% 91.271%, 94.418% 89.277%, 93.497% 87.064%, 92.865% 84.607%, 92.631% 81.883%, 92.631% 81.883%, 92.829% 79.105%, 93.366% 76.695%, 94.159% 74.514%, 95.124% 72.422%, 96.176% 70.278%, 97.231% 67.943%, 98.205% 65.276%, 99.015% 62.138%, 99.576% 58.39%, 99.804% 53.889%, 99.804% 53.889%, 99.603% 50.369%, 99.017% 47.45%, 98.147% 44.987%, 97.095% 42.834%, 95.961% 40.846%, 94.848% 38.878%, 93.857% 36.785%, 93.09% 34.421%, 92.647% 31.642%, 92.631% 28.301%, 92.631% 28.301%, 92.98% 25.73%, 93.611% 23.702%, 94.449% 21.991%, 95.418% 20.373%, 96.444% 18.622%, 97.452% 16.513%, 98.366% 13.822%, 99.112% 10.323%, 99.614% 5.79%, 99.798% 0%);
-    overflow: hidden;
-    /* Kein Scrollen in der Side-Navigation */
 }
 
 .side-nav-content {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding-left: 40px;
-    padding-right: 80px;
     align-items: flex-start;
-
+    padding: 8px;
+    height: 100vh;
 }
 
-.side-nav-content>* {
-    margin-bottom: 40px;
-}
+
 
 .w-500 {
     width: 500px;
@@ -107,8 +98,7 @@ nav ul li a {
 
 
 .side-nav-list {
-    list-style: none;
-    padding: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -119,8 +109,6 @@ nav ul li a {
 
 .content {
     flex: 1;
-    /* Content-Bereich nimmt den restlichen Platz ein */
-    overflow-y: auto;
     /* Ermöglicht vertikales Scrollen im Content-Bereich */
     padding: 20px;
 }
@@ -179,11 +167,12 @@ nav ul li a {
     background-color: rgba(255, 255, 255, 0.5); /* 50% transparent */
     padding: 12px;
     border-radius: 8px;
-    margin: 24px 0;
+    margin: 0 0 24px  0;
     height:70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 
 }
 
@@ -222,26 +211,22 @@ h2 {
 .btn2 {
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    border-radius: 16px;
-    border: none;
-    font-weight: 500;
-    font-size: 18px;
+    border-radius: 8px;
     height: 48px;
-    padding-left: 40px;
-    width: 600px;
-    text-align: left;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 12px 0;
 }
 
 
-.h5p-content {
-    margin: 0px 200px;
-}
 
 
 .content img {
     display: block;
-    max-width: calc(100% - 400px);
     height: auto;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
@@ -249,8 +234,7 @@ h2 {
 
 .content-inhalt {
     text-align: left;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin:24px;
 }
 
 .content-inhalt>* {
