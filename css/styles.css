@@ -96,6 +96,8 @@ nav ul li a {
     height: 100%;
     padding-left: 40px;
     padding-right: 80px;
+    align-items: flex-start;
+
 }
 
 .side-nav-content>* {
@@ -332,4 +334,13 @@ p {
 
 .slider input[type="checkbox"]:disabled:checked {
     background-color: #ccc;
+}
+
+
+
+/*Breakpoint für MacBooks*/
+@media screen and (max-width: 1600px) {
+    .text {
+        font-size: 12px;
+    }
 }
