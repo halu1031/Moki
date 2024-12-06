@@ -46,12 +46,75 @@
         </nav>
         <main class="content">
             <h1>Cookies - mmh lecker!</h1>
-            <p>Übung</p>
-            <iframe class="h5p-content"
-                src="http://quinn.blindvisionstudio.de/wp-admin/admin-ajax.php?action=h5p_embed&id=3" width="60%"
-                height="100%" frameborder="0" title="Cookies - mmh lecker!"></iframe>
+            <h2>Übung</h2>
+            <p style="margin-bottom: 32px;">Zeig Quinn, wie gut du aufgepasst hast! </br>
+                Dir wird folgender Cookie-Banner angezeigt. Welchen Cookies solltest du zustimmen? Das ist kein echter
+                Cookie-Banner, du kannst also nichts falsch machen.</p>
+
+            <div id="cookie-01">
+                <div class="cookie-banner">
+                    <h2>Wir möchten Ihre Zustimmung</h2>
+                    <p id="cookie-text">Über "Anpassen" oder die Datenschutz-Einstellungen am Seitenende können Sie Ihre
+                        Zustimmung jederzeit
+                        anpassen, versagen oder Verarbeitungen widersprechen, die auf Grundlage berechtigter Interessen
+                        vorgenommen werden.
+                        Weitere Informationen finden Sie in den Datenschutzhinweisen und im Impressum.</p>
+                    <div>
+                        <button id="anpassen-button" style="background-color: white; color: black;"
+                            onclick="showCookie02()">Anpassen</button>
+                        <button id="zustimmen-button" style="background-color: green; color: white;"
+                            onclick="showHinweisText()">Zustimmen</button>
+                    </div>
+
+                </div>
+                <p id="hinweis-text" style="color: red;display: none;">Du hast hier die Möglichkeit Anpassungen
+                    vorzunehmen.
+                    Das solltest du nutzen.</p>
+            </div>
+
+            <div id="cookie-02">
+                <div class="cookie-banner">
+                    <h2>Ihre persönlichen Daten</h2>
+                    <p id="cookie-text">Helfen Sie uns, Ihnen ein besseres Weberlebnis zu bieten. Partner setzen Cookies
+                        und sammeln Informationen von Ihrem Browser, um Ihnen relevante Inhalte und Werbung zur
+                        Verfügung zu stellen.</p>
+                    <div class="sliders">
+                        <div class="slider">
+                            <label for="slider1">Notwendig</label>
+                            <input type="checkbox" id="slider1" disabled checked>
+                        </div>
+                        <div class="slider">
+                            <label for="slider2">Statistiken</label>
+                            <input type="checkbox" id="slider2" checked>
+                        </div>
+                        <div class="slider">
+                            <label for="slider3">Marketing</label>
+                            <input type="checkbox" id="slider3">
+                        </div>
+                        <div class="slider">
+                            <label for="slider4">Präferenzen</label>
+                            <input type="checkbox" id="slider4">
+                        </div>
+                    </div>
+                    <div>
+                        <button id="auswahl-erlauben-button" style="background-color: white; color: black;">Auswahl
+                            erlauben</button>
+                        <button id="alle-zulassen-button" style="background-color: green; color: white;">Alle
+                            zulassen</button>
+                    </div>
+
+                </div>
+                <p id="hinweis-text-2" style="color: red; display: none;">Statistik-Cookies können Informationen
+                    darüber sammeln, wie lange und oft du die Webseite besuchst. Diese Cookies solltest du
+                    deaktivieren.</p>
+            </div>
+
+
         </main>
     </div>
+
+
+    <script src="./js/lektion1.js"></script>
 
 </body>
 
