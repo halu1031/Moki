@@ -14,19 +14,17 @@ body {
     /* Verhindert das Scrollen der gesamten Seite */
 }
 
-.noScroll {
-    max-height: 100vh;
-    overflow: hidden;
-}
 
 header {
     background-color: white;
     padding: 25px;
     height: 100px;
+    top:0;
+    position: sticky;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-bottom: 14px;
 }
 
@@ -38,8 +36,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: calc(100vh - 100px);
-    /* Verhindert das Überfließen des Main-Bereichs */
 }
 
 .logo {
@@ -130,12 +126,11 @@ nav ul li a {
 }
 
 .box {
-    padding: 60px;
+    padding: 32px;
     display: flex;
     justify-content: space-between;
     background-color: #f0f0f0;
     /*border: 1px solid #ccc;*/
-    overflow: hidden;
     /* Verhindert Überlauf innerhalb der Boxen */
 }
 
@@ -163,25 +158,41 @@ nav ul li a {
     /* Beispiel */
 }
 
-.left,
-.right {
-    width: 45%;
+.left, .right {
     text-align: center;
 }
 
+.left {
+    width:60%;
+}
 
 .right {
-    margin-top: 40px;
+    width: 40%;
+    text-align: left;
 }
 
-.left img {
-    width: 80%;
-    height: auto;
+
+
+
+
+.progress {
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent */
+    padding: 12px;
+    border-radius: 8px;
+    margin: 24px 0;
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-.right img {
-    width: auto;
-    height: 60%;
+.progress label,
+.progress progress {
+    width: 100%;
+    display: block;
+    text-align: left;
+
 }
 
 h2 {
@@ -189,10 +200,6 @@ h2 {
     font-weight: 700;
     font-style: bold;
     margin: 10px 0;
-}
-
-p {
-    font-size: 18px;
 }
 
 .btn1 {
@@ -337,10 +344,3 @@ p {
 }
 
 
-
-/*Breakpoint für MacBooks*/
-@media screen and (max-width: 1600px) {
-    .text {
-        font-size: 12px;
-    }
-}
