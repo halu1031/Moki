@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 /* Layout Containers */
-.index-main {
+.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -147,9 +147,6 @@ nav ul li a {
     99.798% 0%
   );
   overflow: hidden;
-}
-
-.side-nav-content {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -157,18 +154,13 @@ nav ul li a {
   align-items: flex-start;
 }
 
-.side-nav-content img {
+
+
+.side-nav img {
   width: 80%;
 }
 
 
-.side-nav-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px;
-    height: 100vh;
-}
 
 
 .side-nav-list {
