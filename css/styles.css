@@ -23,8 +23,6 @@ body {
 /* Header Styles */
 header {
     background-color: white;
-    padding: 25px;
-    height: 100px;
     top:0;
     position: sticky;
     z-index: 1000;
@@ -57,7 +55,7 @@ p {
 
 /* Navigation Styles */
 nav ul {
-  padding: 10px;
+  padding: 24px;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -70,8 +68,7 @@ nav ul li {
 }
 
 nav ul li img {
-  width: 20px;
-  height: 20px;
+
   margin-right: 8px;
 }
 
@@ -190,24 +187,39 @@ nav ul li a {
 
 .content {
     flex: 1;
-    /* Ermöglicht vertikales Scrollen im Content-Bereich */
     padding: 20px;
 }
 
 .box {
     padding: 32px;
     display: flex;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    /*border: 1px solid #ccc;*/
-    /* Verhindert Überlauf innerhalb der Boxen */
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.box:nth-child(1) {
-    /* Stil für jede Box ab der zweiten Box */
+
+.box:nth-of-type(1) {
     background-color: #FCEDD1;
-    /* Beispiel */
 }
+
+.box:nth-of-type(2) {
+  background-color: #e2edf5;
+}
+
+.box:nth-of-type(3) {
+  background-color: #fae2e8;
+}
+
+.box:nth-of-type(4) {
+  background-color: #e9f5ea;
+}
+
+.box img {
+  width: 80%;
+  height: auto;
+}
+
+
 
 .side-nav-list img {
   width: 20px;
@@ -261,8 +273,8 @@ nav ul li a {
 .progress {
     background-color: rgba(255, 255, 255, 0.5); /* 50% transparent */
     padding: 12px;
+    margin: 12px 0;
     border-radius: 8px;
-    margin: 0 0 24px  0;
     height:70px;
     display: flex;
     flex-direction: column;
@@ -282,18 +294,7 @@ nav ul li a {
   margin: 0 200px;
 }
 
-/* Box Styles */
-.box {
-  padding: 24px;
-  display: flex;
-  column-gap: 30px;
-  justify-content: space-between;
-  overflow: hidden;
-}
 
-.box:nth-child(1) {
-  background-color: #fcedd1;
-}
 .btn1 {
     font-weight: 500;
     font-size: 18px;
@@ -307,22 +308,9 @@ nav ul li a {
     border-radius: 16px;
 }
 
-.box:nth-child(2) {
-  background-color: #e2edf5;
-}
 
-.box:nth-child(3) {
-  background-color: #fae2e8;
-}
 
-.box:nth-child(4) {
-  background-color: #e9f5ea;
-}
 
-.box img {
-  width: 80%;
-  height: auto;
-}
 
 .left,
 .right {
@@ -470,23 +458,6 @@ nav ul li a {
   background-color: #ccc;
 }
 
-.progress {
-  background-color: rgba(255, 255, 255, 0.5); /* 50% transparent */
-  padding: 12px;
-  border-radius: 8px;
-  margin: 24px 0;
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.progress label,
-.progress progress {
-  width: 100%;
-  display: block;
-  text-align: left;
-}
 
 /* Media Queries */
 @media screen and (max-width: 1600px) {
