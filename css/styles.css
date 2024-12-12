@@ -209,7 +209,7 @@ nav ul li a {
 
 /* Box Styles */
 .box {
-  padding: 60px;
+  padding: 24px;
   display: flex;
   column-gap: 30px;
   justify-content: space-between;
@@ -363,6 +363,13 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.progress label,
+.progress progress {
+  width: 100%;
+  display: block;
+  text-align: left;
 }
 
 /* Media Queries */
