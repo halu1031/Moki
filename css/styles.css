@@ -164,11 +164,11 @@ nav ul li a {
 
 .side-nav-list {
   list-style: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+
 }
 
 
@@ -209,34 +209,22 @@ nav ul li a {
 
 
 
-
-
 /* Main Content Styles */
 .content {
   flex: 1;
   overflow-y: auto;
-  padding: 20px;
-}
-
-.content-inhalt {
-  text-align: left;
-  margin: 0 200px;
-}
-
-.content-inhalt > * {
-  margin-bottom: 10px;
-}
-
-.content-inhalt button {
-  margin-top: 40px;
+  padding: 20px 40px;
 }
 
 .content img {
   display: block;
-  max-width: calc(100% - 200px);
   height: auto;
-  margin: 0 auto 100px;
+  width: 85%;
+
+  margin: 50px;
 }
+
+
 
 .left, .right {
     text-align: center;
@@ -272,62 +260,14 @@ nav ul li a {
     text-align: left;
 }
 
-.h5p-content {
-  margin: 0 200px;
-}
-
-
-.btn1 {
-    font-weight: 500;
-    font-size: 18px;
-    height: 48px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background: linear-gradient(to right, #F9B93C, #F49404);
-    color: white;
-    border: 1px solid white;
-    cursor: pointer;
-    border-radius: 16px;
-}
-
-
-
-
 
 .left,
 .right {
   width: 45%;
   text-align: center;
 }
+ 
 
-.btn2 {
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    border-radius: 8px;
-    height: 48px;
-    padding-left: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 12px 0;
-}
-
-
-
-
-.content img {
-    display: block;
-    height: auto;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-}
-
-.content-inhalt {
-    text-align: left;
-    margin:24px;
-}
 
 .right {
   margin-top: 40px;
@@ -344,6 +284,7 @@ nav ul li a {
   border: 1px solid white;
   border-radius: 16px;
   cursor: pointer;
+  
 }
 
 .btn1:hover {
@@ -356,11 +297,12 @@ nav ul li a {
   border-radius: 16px;
   border: none;
   font-weight: 500;
+  padding: 8px;
   font-size: 14px;
   height: 48px;
-  padding-left: 40px;
-  width: 600px;
   text-align: left;
+  width: 100%;
+  margin: 8px 0;
 }
 
 /* Cookie Banner */
