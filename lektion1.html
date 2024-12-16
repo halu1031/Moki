@@ -36,16 +36,16 @@
             <img style="width: 75%;" src="img/box1_img.png" alt="Bild 1">
             <strong>Übersicht</strong>
             <div class="progress">
-                <label for="kapitel">Bearbeitete Kapitel</label>
-                <progress id="kapitel" value="32" max="100"> 32% </progress>
+                <label for="kapitel1_1">Bearbeitete Kapitel</label>
+                <progress id="kapitel1_1" value="32" max="100"></progress>
             </div>
             <div class="progress">
-                <label for="kapitel">Bearbeitete Kapitel</label>
-                <progress id="kapitel" value="32" max="100"> 32% </progress>
+                <label for="kapitel1_2">Bearbeitete Übungen</label>
+                <progress id="kapitel1_2" value="32" max="100"></progress>
             </div>
             <div class="progress">
-                <label for="kapitel">Bearbeitete Kapitel</label>
-                <progress id="kapitel" value="32" max="100"> 32% </progress>
+                <label for="kapitel1_3">Bearbeitete Tests</label>
+                <progress id="kapitel1_3" value="32" max="100"></progress>
             </div>
             <a href="lektion1_inhalt.html"><button class="btn1"> Fortsetzen →</button></a>
         </nav>
@@ -68,6 +68,37 @@
         </main>
     </div>
 
+    <script>
+        window.onload = function () {
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(";").shift();
+            }
+
+            function updateProgress() {
+                const userName = getCookie("name");
+
+                if (!userName) {
+                    window.location.href = "login.html";
+                    return;
+                }
+
+                for (let i = 1; i <= 1; i++) {
+                    for (let j = 1; j <= 3; j++) {
+                        const progressId = `kapitel${i}_${j}`;
+                        const progressValue = getCookie(progressId) || 0;
+                        const progressElement = document.getElementById(progressId);
+                        if (progressElement) {
+                            progressElement.value = progressValue;
+                        }
+                    }
+                }
+            }
+
+            updateProgress();
+        };
+    </script>
 </body>
 
 </html>
