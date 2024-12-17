@@ -34,7 +34,7 @@
         }
 
         const validUsers = {
-            max: { code: "max123", progress: 20 },
+            max: { code: "max123", progress: 0 },
             anna: { code: "anna123", progress: 100 },
         };
 
@@ -54,6 +54,9 @@
                 }
 
                 document.cookie = `name=${user}; path=/;`;
+                document.cookie = `kapitel1_1=25; path=/;`;
+                document.cookie = `kapitel1_2=50; path=/;`;
+                document.cookie = `kapitel1_3=0; path=/;`;
 
                 window.location.href = "index.html";
             } else {
