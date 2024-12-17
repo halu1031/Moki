@@ -9,6 +9,7 @@ body {
     /*Hier muss man noch den BG anpassen, mache ich aber zum Schluss, 
     da ich so sehe, wie ich den Browser skalieren muss, um alles andere passend zu sehen*/
     background-image: url("../img/bg_login.png");
+    background-size: auto;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;

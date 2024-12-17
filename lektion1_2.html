@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webseite</title>
+    <link rel="stylesheet" href="css/styles_content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav-link">
+            <a href="lektion1.html">← Zurück zum Lernpfad Informationen und Daten</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <nav class="side-nav">
+            <p>Kapitel 1</p>
+            <h1>Informationen richtig suchen</h1>
+            <div class="btn2 isActive"><img src="img/icon/book.png" class="icon" alt="Icon 1">Was ist eine
+                Suchmaschine?</div>
+            <div class="btn2 is isCurrent"><img src="img/icon/book.png" class="icon" alt="Icon 1">Wie suche ich nach
+                Informationen?
+            </div>
+            <div class="btn2"><img src="img/icon/exercise.png" class="icon" alt="Icon 1">Cookies - mmh lecker!</div>
+            <div class="btn2"><img src="img/icon/exercise.png" class="icon" alt="Icon 1">Abos oder Werbung zustimmen?
+            </div>
+            <div class="btn2"><img src="img/icon/book.png" class="icon" alt="Icon 1">Was sind gute Suchergebnisse?</div>
+            <div class="btn2"><img src="img/icon/book.png" class="icon" alt="Icon 1">Wie kann ich Suchergebnisse
+                verbessern?
+            </div>
+        </nav>
+        <main class="content">
+            <div class="heading_progress">
+                <h1>Wie suche ich nach Informationen?</h1>
+                <div class="progress">
+                    <label for="kapitel1_1">Fortschritt</label>
+                    <progress id="kapitel1_1" value="100" max="100"></progress>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="lektion1_3.html"><button class="btn3">Weiter →</button></a>
+            </div>
+        </main>
+    </div>
+    <script>
+        window.onload = function () {
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(";").shift();
+            }
+
+            function updateProgress() {
+                const userName = getCookie("name");
+
+                if (!userName) {
+                    window.location.href = "login.html";
+                    return;
+                }
+
+                const progressId = `kapitel1_1`;
+                const progressValue = getCookie(progressId) || 0;
+                const progressElement = document.getElementById(progressId);
+                if (progressElement) {
+                    progressElement.value = progressValue;
+                }
+            }
+            if (getCookie("name") === "max") {
+                document.cookie = `kapitel1_1=50; path=/;`;
+            }
+            updateProgress();
+        };
+    </script>
+</body>
+
+</html>

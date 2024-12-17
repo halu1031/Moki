@@ -18,8 +18,8 @@
         <input type="password" id="login-code" placeholder="Geben Sie den Code ein">
         <button onclick="handleLogin()">Anmelden</button><br>
         <p id="error-message" style="color: red; display: none;">Ungültiger Code!</p><br>
-        <a onclick="deleteAllCookies()">Alle Cookies löschen</a>
     </div>
+
     <script>
         function deleteAllCookies() {
             const cookies = document.cookie.split(';');
@@ -29,8 +29,6 @@
                 const cookieName = cookie.split('=')[0].trim();
                 document.cookie = cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
             }
-
-            alert('Alle Cookies wurden gelöscht!');
         }
 
         const validUsers = {
@@ -54,15 +52,13 @@
                 }
 
                 document.cookie = `name=${user}; path=/;`;
-                document.cookie = `kapitel1_1=25; path=/;`;
-                document.cookie = `kapitel1_2=50; path=/;`;
-                document.cookie = `kapitel1_3=0; path=/;`;
 
                 window.location.href = "index.html";
             } else {
                 errorMessage.style.display = "block";
             }
         }
+        window.onload = function () { deleteAllCookies() }
     </script>
 </body>
 
