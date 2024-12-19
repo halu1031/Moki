@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinn</title>
+    <link rel="stylesheet" href="css/styles_login.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Anmeldung</h1>
+        <p class="italic">max123 = 20%
+            anna123 = 100%</p>
+        <input type="password" id="login-code" placeholder="Geben Sie den Code ein">
+        <button onclick="handleLogin()">Anmelden</button><br>
+        <p id="error-message" style="color: red; display: none;">Ungültiger Code!</p><br>
+    </div>
+
+    <script>
+        function deleteAllCookies() {
+            const cookies = document.cookie.split(';');
+
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i];
+                const cookieName = cookie.split('=')[0].trim();
+                document.cookie = cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+            }
+        }
+
+        const validUsers = {
+            max: { code: "max123", progress: 0 },
+            anna: { code: "anna123", progress: 100 },
+        };
+
+        function handleLogin() {
+            const codeInput = document.getElementById("login-code").value;
+            const errorMessage = document.getElementById("error-message");
+
+            const user = Object.keys(validUsers).find((key) => validUsers[key].code === codeInput);
+
+            if (user) {
+                const progress = validUsers[user].progress;
+
+                for (let i = 1; i <= 4; i++) {
+                    for (let j = 1; j <= 3; j++) {
+                        document.cookie = `kapitel${i}_${j}=${progress}; path=/;`;
+                    }
+                }
+
+                document.cookie = `name=${user}; path=/;`;
+
+                window.location.href = "index.html";
+            } else {
+                errorMessage.style.display = "block";
+            }
+        }
+        window.onload = function () { deleteAllCookies() }
+    </script>
+</body>
+
+</html>

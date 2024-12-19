@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    /*Hier muss man noch den BG anpassen, mache ich aber zum Schluss, 
+    da ich so sehe, wie ich den Browser skalieren muss, um alles andere passend zu sehen*/
+    background-image: url("../img/bg_login.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Andika", sans-serif;
+}
+
+.login-container {
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    color: lightgrey;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+
+button {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    height: 48px;
+    padding: 0 40px;
+    background: linear-gradient(to right, #5351FF, #5B24F5);
+    color: white;
+    border: 1px solid white;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: white;
+    background: none;
+    border: 2px solid #5B24F5;
+    color: #5B24F5;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #5B24F5;
+}
