@@ -56,11 +56,13 @@ h1 {
 
 h2 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
+    margin-bottom: 32px;
 }
 
 
@@ -114,7 +116,7 @@ nav ul li a {
 
 .side-nav {
     flex: 0 0 30%;
-    background-color: #ffecce;
+    background-color: #F0F8E8;
     clip-path: polygon(99.798% 0%,
             0% 0%,
             0% 100%,
@@ -169,7 +171,7 @@ nav ul li a {
 }
 
 .isExercise {
-    background-color: #DFDFF5;
+    background-color: #FFF1C7;
 }
 
 
@@ -241,6 +243,19 @@ nav ul li a {
     width: 50%;
 }
 
+.content_image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+
+.content_image p {
+    margin-bottom: 40px;
+}
+
 
 .left,
 .right {
@@ -266,16 +281,48 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
     width: 100%;
+
+    appearance: none;
+    /* Entfernt das standardmäßige Browser-Design */
+    -webkit-appearance: none;
+    /* Für Webkit-Browser */
 
 }
 
-.progress label,
-.progress progress {
+/* Fortschrittsbalken-Stil */
+progress {
     width: 100%;
-    display: block;
-    text-align: left;
+    height: 8px;
+    appearance: none;
+    /* Entfernt das standardmäßige Browser-Design */
+    -webkit-appearance: none;
+    /* Für Webkit-Browser */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Hintergrund des Progress-Balkens */
+progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    /* Hellgrauer Hintergrund */
+    border-radius: 8px;
+}
+
+/* Fortschrittsanzeige gelb */
+progress::-webkit-progress-value {
+    background-color: #40A304;
+}
+
+progress::-moz-progress-bar {
+    background-color: #40A304;
+    /* Für Firefox */
+}
+
+/* Optional: Stil für ältere Browser */
+progress[value]::-ms-fill {
+    background-color: #40A304;
+    /* Für Internet Explorer */
 }
 
 
@@ -337,11 +384,10 @@ nav ul li a {
     border: 1px solid black;
 }
 
-.isActive {
-    background-color: #E2EECC;
-}
+.isActive {}
 
 .isCurrent {
+    border: 2px solid #40A304;
     font-weight: bold;
 }
 

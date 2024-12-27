@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: "Andika", sans-serif;
+  font-family: "Poppins", serif;
 }
 
 .noScroll {
@@ -50,6 +50,7 @@ header {
 
 h1 {
   font-size: 20px;
+  margin-bottom: 19px;
 
 }
 
@@ -119,7 +120,7 @@ nav ul li a {
 /* Sidebar Styles */
 .side-nav {
   flex: 0 0 30%;
-  background-color: #ffecce;
+  background-color: #F0F8E8;
   clip-path: polygon(99.798% 0%,
       0% 0%,
       0% 100%,
@@ -215,9 +216,10 @@ nav ul li a {
 }
 
 .box img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
+
 
 
 
@@ -285,24 +287,24 @@ progress {
 
 /* Hintergrund des Progress-Balkens */
 progress::-webkit-progress-bar {
-  background-color: #e0e0e0;
+  background-color: #fff;
   /* Hellgrauer Hintergrund */
   border-radius: 8px;
 }
 
 /* Fortschrittsanzeige gelb */
 progress::-webkit-progress-value {
-  background-color: #018070;
+  background-color: #40A304;
 }
 
 progress::-moz-progress-bar {
-  background-color: #018070;
+  background-color: #40A304;
   /* Für Firefox */
 }
 
 /* Optional: Stil für ältere Browser */
 progress[value]::-ms-fill {
-  background-color: #018070;
+  background-color: #40A304;
   /* Für Internet Explorer */
 }
 
