@@ -359,6 +359,8 @@ progress[value]::-ms-fill {
 
 .btn2 {
     background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    color: #000;
     cursor: pointer;
     border-radius: 16px;
     border: none;
