@@ -199,19 +199,19 @@ nav ul li a {
 
 
 .box:nth-of-type(1) {
-  background-color: #FCEDD1;
+  background-color: #A2D7BF;
 }
 
 .box:nth-of-type(2) {
-  background-color: #e2edf5;
+  background-color: #BAE9DB;
 }
 
 .box:nth-of-type(3) {
-  background-color: #fae2e8;
+  background-color: #CCEADD;
 }
 
 .box:nth-of-type(4) {
-  background-color: #e9f5ea;
+  background-color: #E4F1EA;
 }
 
 .box img {
@@ -264,13 +264,46 @@ nav ul li a {
   justify-content: center;
   width: 100%;
 
+  appearance: none;
+  /* Entfernt das standardmäßige Browser-Design */
+  -webkit-appearance: none;
+  /* Für Webkit-Browser */
+
 }
 
-.progress label,
-.progress progress {
+/* Fortschrittsbalken-Stil */
+progress {
   width: 100%;
-  display: block;
-  text-align: left;
+  height: 8px;
+  appearance: none;
+  /* Entfernt das standardmäßige Browser-Design */
+  -webkit-appearance: none;
+  /* Für Webkit-Browser */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Hintergrund des Progress-Balkens */
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  /* Hellgrauer Hintergrund */
+  border-radius: 8px;
+}
+
+/* Fortschrittsanzeige gelb */
+progress::-webkit-progress-value {
+  background-color: #018070;
+}
+
+progress::-moz-progress-bar {
+  background-color: #018070;
+  /* Für Firefox */
+}
+
+/* Optional: Stil für ältere Browser */
+progress[value]::-ms-fill {
+  background-color: #018070;
+  /* Für Internet Explorer */
 }
 
 
@@ -293,7 +326,7 @@ nav ul li a {
   font-size: 14px;
   height: 48px;
   padding: 0 40px;
-  background: linear-gradient(to right, #f9b93c, #f49404);
+  background: linear-gradient(to right, #0AA363, #018070);
   color: white;
   border: 1px solid white;
   border-radius: 16px;
@@ -302,7 +335,7 @@ nav ul li a {
 }
 
 .btn1:hover {
-  background: linear-gradient(to right, #f49404, #f9b93c);
+  border: 2px solid #018070;
 }
 
 .btn2 {

@@ -9,8 +9,12 @@ body {
     /*Hier muss man noch den BG anpassen, mache ich aber zum Schluss, 
     da ich so sehe, wie ich den Browser skalieren muss, um alles andere passend zu sehen*/
     background-image: url("../img/bg_login.png");
-    background-size: auto;
+    background-size: cover;
+    /* Bild passt sich an den gesamten Container an */
     background-repeat: no-repeat;
+    /* Verhindert Wiederholungen des Bildes */
+    background-position: center;
+    /* Zentriert das Bild */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +24,21 @@ body {
 }
 
 .login-container {
+    border-radius: 12px;
+    padding: 40px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.749);
 }
 
 .italic {
     font-style: italic;
     color: lightgrey;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
 }
 
 input[type=password] {
@@ -43,19 +56,17 @@ button {
     font-size: 14px;
     height: 48px;
     padding: 0 40px;
-    background: linear-gradient(to right, #5351FF, #5B24F5);
+    background: linear-gradient(to right, #0AA363, #018070);
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 16px;
     cursor: pointer;
 
 }
 
 button:hover {
-    background-color: white;
-    background: none;
-    border: 2px solid #5B24F5;
-    color: #5B24F5;
+    border: 2px solid #018070;
+
 }
 
 a {
@@ -63,5 +74,25 @@ a {
 }
 
 a:hover {
-    color: #5B24F5;
+    color: #018070;
+}
+
+.logo_login {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    /* Positionierung relativ zum nächstgelegenen positionierten Element */
+    top: 30px;
+    /* Abstand von oben */
+    left: 20px;
+    /* Abstand von links */
+    z-index: 1000;
+    /* Stellt sicher, dass das Logo über anderen Elementen liegt */
+}
+
+.logo_login img {
+    max-width: 100px;
+    /* Begrenzung der Breite des Logos */
+    height: auto;
+    /* Automatische Anpassung der Höhe, um das Seitenverhältnis zu bewahren */
 }
