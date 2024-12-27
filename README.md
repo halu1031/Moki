@@ -1,4 +1,4 @@
-# Quinn: Interaktive Lernanwendung zur Förderung der Medienkompetenz bei Kindern
+# Moki: Eine Interaktive Lernanwendung zur Förderung der Medienkompetenz bei Kindern
 
 ## Projektbeschreibung
 
@@ -15,7 +15,3 @@ Die Lerninhalte werden durch Gamification-Ansätze, visuelle Elemente und alters
 - **Altersgerechtes Design:** Visuell ansprechende Gestaltung mit Illustrationen und Animationen.
 - **Anpassbares Lernsystem:** Adaptive Lernpfade für individuelle Lerngeschwindigkeiten.
 - **Wissensabfrage:** Internetführerschein zur Überprüfung und Festigung der vermittelten Inhalte.
-
----
-## Demo
-[Demo](https://halu1031.github.io/Quinn/)
