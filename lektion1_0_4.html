@@ -72,8 +72,7 @@
                     <img src="img/hint.png" alt="Hinweis">
                     <p>
                         Du hast hier die Möglichkeit Anpassungen
-                        vorzunehmen.
-                        Das solltest du nutzen.
+                        vorzunehmen. Das solltest du nutzen.
                     </p>
                 </div>
             </div>
@@ -116,16 +115,23 @@
                     <img src="img/hint.png" alt="Hinweis">
                     <p>
                         Statistik-Cookies können Informationen darüber sammeln, wie lange und oft du die Webseite
-                        besuchst.
-                        Diese Cookies solltest du deaktivieren.
+                        besuchst. Diese Cookies solltest du deaktivieren.
                     </p>
                 </div>
             </div>
 
+            <div id="success-message" style="display: none; flex-direction: column;">
+                <div class="success">
+                    <img src="img/hint.png" alt="Hinweis">
+                    <p>Toll gemacht, diesen Cookies kannst du ohne Bedenken zustimmen!</p>
+                </div>
 
-            <div class="button-container">
-                <a href="lektion1_0_5.html"><button class="btn3">Weiter →</button></a>
+                <div class="button-container">
+                    <a href="lektion1_0_5.html"><button class="btn3">Weiter →</button></a>
+                </div>
             </div>
+
+
         </main>
     </div>
     <script>
@@ -186,7 +192,7 @@
                 document.getElementById('hinweis-text-2').style.display = 'flex';
             } else {
                 document.getElementById('hinweis-text-2').style.display = 'none';
-                alert('Super, du hast alles abgelehnt. Das ist auch eine Möglichkeit.');
+                document.getElementById('success-message').style.display = 'flex';
             }
             hideHintsAfterDelay();
         });

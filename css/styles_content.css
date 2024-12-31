@@ -412,6 +412,26 @@ progress[value]::-ms-fill {
     align-self: center;
 }
 
+.success {
+    display: flex;
+    flex-direction: row;
+}
+
+.success > img {
+    width: 150px;
+}
+
+.success > p {
+    color: black; 
+    border: 2px solid green; 
+    border-radius: 8px; 
+    background-color: #ccffd2;
+    align-content: center;
+    padding: 20px;
+    height: min-content;
+    align-self: center;
+}
+
 .isCurrent {
     border: 2px solid #40A304;
     font-weight: bold;
