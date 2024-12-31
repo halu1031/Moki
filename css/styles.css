@@ -232,9 +232,7 @@ nav ul li a {
 
 .content img {
   display: block;
-  height: auto;
-  width: 85%;
-
+  height: 20%;
   margin: 50px;
 }
 
