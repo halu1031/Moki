@@ -22,7 +22,7 @@
 
     <div class="container">
         <nav class="side-nav isExercise">
-            <small>Kapitel 1</small>
+            <small>Kapitel 2</small>
             <h1>Umgang mit Passwörtern</h1>
             <a href="lektion1_1.html" class="btn2"><img src="img/icon/book.png" class="icon" alt="Icon 1">Nur
                 sicher ist sicher</a>
@@ -34,85 +34,16 @@
             </a>
         </nav>
         <main class="content">
-            <h1>Cookies - mmh lecker!</h1>
+            <div class="heading_progress">
+                <h1>Affenstarkes Passwort</h1>
+                <div class="progress">
+                    <label for="kapitel1_1">Fortschritt</label>
+                    <progress id="kapitel1_1" value="100" max="100"></progress>
+                </div>
+            </div>
             <h2>Übung</h2>
-            <p style="margin-bottom: 32px;">Zeig Quinn, wie gut du aufgepasst hast! </br>
-                Dir wird folgender Cookie-Banner angezeigt. Welchen Cookies solltest du zustimmen? Das ist kein echter
-                Cookie-Banner, du kannst also nichts falsch machen.</p>
-
-            <div id="cookie-01">
-                <div class="cookie-banner">
-                    <h2>Wir möchten Ihre Zustimmung</h2>
-                    <p id="cookie-text">Über "Anpassen" oder die Datenschutz-Einstellungen am Seitenende können Sie Ihre
-                        Zustimmung jederzeit
-                        anpassen, versagen oder Verarbeitungen widersprechen, die auf Grundlage berechtigter Interessen
-                        vorgenommen werden.
-                        Weitere Informationen finden Sie in den Datenschutzhinweisen und im Impressum.</p>
-                    <div>
-                        <button id="anpassen-button"
-                            style="background-color: white; color: black; cursor: pointer;">Anpassen</button>
-                        <button id="zustimmen-button"
-                            style="background-color: green; color: white; cursor: pointer;">Zustimmen</button>
-                    </div>
-
-                </div>
-                <div id="hinweis-text" class="hint">
-                    <img src="img/hint.png" alt="Hinweis">
-                    <p>
-                        Du hast hier die Möglichkeit Anpassungen
-                        vorzunehmen.
-                        Das solltest du nutzen.
-                    </p>
-                </div>
-            </div>
-
-            <div id="cookie-02">
-                <div class="cookie-banner">
-                    <h2>Ihre persönlichen Daten</h2>
-                    <p id="cookie-text">Helfen Sie uns, Ihnen ein besseres Weberlebnis zu bieten. Partner setzen Cookies
-                        und sammeln Informationen von Ihrem Browser, um Ihnen relevante Inhalte und Werbung zur
-                        Verfügung zu stellen.</p>
-                    <div class="sliders">
-                        <div class="slider">
-                            <label for="slider1">Notwendig</label>
-                            <input type="checkbox" id="slider1" disabled checked>
-                        </div>
-                        <div class="slider">
-                            <label for="slider2">Statistiken</label>
-                            <input type="checkbox" id="slider2" checked>
-                        </div>
-                        <div class="slider">
-                            <label for="slider3">Marketing</label>
-                            <input type="checkbox" id="slider3">
-                        </div>
-                        <div class="slider">
-                            <label for="slider4">Präferenzen</label>
-                            <input type="checkbox" id="slider4">
-                        </div>
-                    </div>
-                    <div>
-                        <button id="auswahl-erlauben-button"
-                            style="background-color: white; color: black; cursor: pointer; cursor: pointer;">Auswahl
-                            erlauben</button>
-                        <button id="alle-zulassen-button"
-                            style="background-color: green; color: white; cursor: pointer;">Alle
-                            zulassen</button>
-                    </div>
-
-                </div>
-                <div id="hinweis-text-2" class="hint">
-                    <img src="img/hint.png" alt="Hinweis">
-                    <p>
-                        Statistik-Cookies können Informationen darüber sammeln, wie lange und oft du die Webseite
-                        besuchst.
-                        Diese Cookies solltest du deaktivieren.
-                    </p>
-                </div>
-            </div>
-
-            <div class="button-container">
-                <a href="lektion1_5.html"><button class="btn3">Weiter →</button></a>
-            </div>
+            <p style="margin-bottom: 32px;">Erstelle ein starkes Passwort, das dich sicher durch den Dschungel führt!
+            </p>
 
 
         </main>
@@ -120,48 +51,7 @@
 
 
     <script>
-        const showCookie02 = () => {
-            document.getElementById('cookie-01').style.display = 'none';
-            document.getElementById('cookie-02').style.display = 'block';
-            hideHintsAfterDelay();
-        }
 
-        // Initial versteckt den cookie-02
-        document.getElementById('cookie-02').style.display = 'none';
-
-        document.getElementById('anpassen-button').addEventListener('click', showCookie02);
-
-        document.getElementById('zustimmen-button').addEventListener('click', function () {
-            document.getElementById('hinweis-text').style.display = 'flex';
-            console.log('zustimmen-button clicked');
-            hideHintsAfterDelay();
-        });
-
-        document.getElementById('alle-zulassen-button').addEventListener('click', function () {
-            console.log('alle-zulassen-button clicked');
-            document.getElementById('hinweis-text-2').style.display = 'flex';
-            hideHintsAfterDelay();
-        });
-
-        document.getElementById('auswahl-erlauben-button').addEventListener('click', function () {
-            if (document.getElementById('slider2').checked || document.getElementById('slider3').checked || document.getElementById('slider4').checked) {
-                console.log('auswahl-erlauben-button clicked');
-                document.getElementById('hinweis-text-2').style.display = 'flex';
-            } else {
-                document.getElementById('hinweis-text-2').style.display = 'none';
-                alert('Super, du hast alles abgelehnt. Das ist auch eine Möglichkeit.');
-            }
-            hideHintsAfterDelay();
-        });
-
-        const hideHintsAfterDelay = () => {
-            console.log('hideHintsAfterDelay called');
-            setTimeout(function () {
-                console.log('Hiding hints');
-                document.getElementById('hinweis-text').style.display = 'none';
-                document.getElementById('hinweis-text-2').style.display = 'none';
-            }, 5000);
-        }
     </script>
 
 </body>
