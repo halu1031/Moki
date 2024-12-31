@@ -65,6 +65,11 @@ p {
     margin-bottom: 32px;
 }
 
+li {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
 
 .text {
     font-size: 16px;

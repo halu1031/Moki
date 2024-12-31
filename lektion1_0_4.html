@@ -21,7 +21,7 @@
     </header>
 
     <div class="container">
-        <nav class="side-nav">
+        <nav class="side-nav isExercise">
             <small>Kapitel 1</small>
             <h1>Persönliche Daten schützen</h1>
             <a href="lektion1_0_1.html" class="btn2"><img src="img/icon/book.png" class="icon" alt="Icon 1">Was
@@ -41,93 +41,90 @@
         </nav>
         <main class="content">
             <div class="heading_progress">
-                <h1>Was sind persönliche Daten?</h1>
+                <h1>Nur die guten Cookies auswählen</h1>
                 <div class="progress">
                     <label for="kapitel1_1">Fortschritt</label>
                     <progress id="kapitel1_1" value="1" max="1"></progress>
                 </div>
             </div>
 
-            <p>Persönliche Daten sind Dinge, die eine Person beschreiben und dabei helfen, sie zu erkennen. Das sind
-                Informationen, die nicht jeder wissen sollte, weil sie uns sehr privat betreffen.</p>
-
-            <img style="width: auto; height: 30%;" src="img/lektion1_0-1.png" alt="Bild 1">
-
-            <h2> Beispiele für persönliche Daten sind:</h2>
-
-            <ul>
-                <li>
-                    <p>Deinen Namen (wie die Inschrift auf deinem Baumhaus)</p>
-                </li>
-                <li>
-                    <p>Wo du wohnst (deine geheime Lichtung im Dschungel)</p>
-                </li>
-                <li>
-                    <p>Dein Geburtsdatum (der Tag, an dem dein Abenteuer begann)</p>
-                </li>
-                <li>
-                    <p>Dein Foto (wie ein Bild von dir, das nur deine Freunde sehen sollen)</p>
-                </li>
-            </ul>
+            <p>Dir wird folgender Cookie-Banner angezeigt. Welchen Cookies solltest du zustimmen? Das ist kein echter
+                Cookie-Banner, du kannst also nichts falsch machen.</p>
 
 
+            <div id="cookie-01">
+                <div class="cookie-banner">
+                    <h2>Wir möchten Ihre Zustimmung</h2>
+                    <p id="cookie-text">Über "Anpassen" oder die Datenschutz-Einstellungen am Seitenende können Sie Ihre
+                        Zustimmung jederzeit
+                        anpassen, versagen oder Verarbeitungen widersprechen, die auf Grundlage berechtigter Interessen
+                        vorgenommen werden.
+                        Weitere Informationen finden Sie in den Datenschutzhinweisen und im Impressum.</p>
+                    <div>
+                        <button id="anpassen-button"
+                            style="background-color: white; color: black; cursor: pointer;">Anpassen</button>
+                        <button id="zustimmen-button"
+                            style="background-color: green; color: white; cursor: pointer;">Zustimmen</button>
+                    </div>
 
-            <div class="content_image">
-                <div>
-                    <h2>Dein sicheres Lager</h2>
-                    <p>Wenn du im Dschungel unterwegs bist, brauchst du ein sicheres Lager, in dem du deine
-                        Sachen gut
-                        verstecken kannst. Das sind deine Passwörter! Du solltest sie niemals einfach so mit
-                        anderen
-                        Tieren
-                        im
-                        Dschungel teilen. Ein sicheres Passwort ist wie ein geheimer Schlüssel, den nur du hast,
-                        damit
-                        niemand
-                        einfach in dein Lager einbrechen kann.
-                    </p>
-                    <h2>Den richtigen Pfad wählen</h2>
-                    <p>Im Dschungel gibt es viele versteckte, gefährliche Pfade, die dich in die Irre führen
-                        können.
-                        Genauso
-                        gibt es im Internet falsche Links, die wie eine Einladung zu einer wunderschönen
-                        Blumenwiese
-                        aussehen,
-                        aber dich in eine Falle locken. Deswegen solltest du immer nur den sicheren Pfad wählen,
-                        den dir
-                        ein
-                        erfahrener Guide, also ein vertrauenswürdiger Erwachsener, zeigt.
-                    </p>
-                    <h2>Auf der Hut vor wilden Tieren</h2>
-                    <p>Im Dschungel gibt es Tiere, die dich erschrecken oder sogar angreifen könnten – das sind
-                        die
-                        Betrüger
-                        im
-                        Internet, die versuchen, dich zu täuschen oder deine Sachen zu stehlen. Sie kommen
-                        manchmal in
-                        Gestalt
-                        von anderen Tieren, die freundlich aussehen, aber eigentlich böse sind. Deshalb ist es
-                        wichtig,
-                        immer
-                        genau hinzuschauen und nicht auf alles zu vertrauen, was dir begegnet.
-                    </p>
-                    <h2>Hilfe von deinen Dschungelfreunden</h2>
-                    <p>Wenn du etwas Ungewöhnliches im Dschungel siehst, zum Beispiel ein gefährliches Tier oder
-                        einen
-                        komischen
-                        Pfad, dann hol dir Hilfe von deinen Dschungelfreunden – das sind deine Eltern oder
-                        Lehrer. Sie
-                        kennen
-                        den Dschungel gut und können dir helfen, sicher weiterzukommen.
+                </div>
+                <div id="hinweis-text" class="hint">
+                    <img src="img/hint.png" alt="Hinweis">
+                    <p>
+                        Du hast hier die Möglichkeit Anpassungen
+                        vorzunehmen.
+                        Das solltest du nutzen.
                     </p>
                 </div>
-
-                <img src="img/content_image.png" alt="Bild 1">
-
             </div>
 
+            <div id="cookie-02">
+                <div class="cookie-banner">
+                    <h2>Ihre persönlichen Daten</h2>
+                    <p id="cookie-text">Helfen Sie uns, Ihnen ein besseres Weberlebnis zu bieten. Partner setzen Cookies
+                        und sammeln Informationen von Ihrem Browser, um Ihnen relevante Inhalte und Werbung zur
+                        Verfügung zu stellen.</p>
+                    <div class="sliders">
+                        <div class="slider">
+                            <label for="slider1">Notwendig</label>
+                            <input type="checkbox" id="slider1" disabled checked>
+                        </div>
+                        <div class="slider">
+                            <label for="slider2">Statistiken</label>
+                            <input type="checkbox" id="slider2" checked>
+                        </div>
+                        <div class="slider">
+                            <label for="slider3">Marketing</label>
+                            <input type="checkbox" id="slider3">
+                        </div>
+                        <div class="slider">
+                            <label for="slider4">Präferenzen</label>
+                            <input type="checkbox" id="slider4">
+                        </div>
+                    </div>
+                    <div>
+                        <button id="auswahl-erlauben-button"
+                            style="background-color: white; color: black; cursor: pointer; cursor: pointer;">Auswahl
+                            erlauben</button>
+                        <button id="alle-zulassen-button"
+                            style="background-color: green; color: white; cursor: pointer;">Alle
+                            zulassen</button>
+                    </div>
+
+                </div>
+                <div id="hinweis-text-2" class="hint">
+                    <img src="img/hint.png" alt="Hinweis">
+                    <p>
+                        Statistik-Cookies können Informationen darüber sammeln, wie lange und oft du die Webseite
+                        besuchst.
+                        Diese Cookies solltest du deaktivieren.
+                    </p>
+                </div>
+            </div>
+
+
             <div class="button-container">
-                <a href="lektion1_0_2.html"><button class="btn3">Weiter →</button></a>
+                <a href="lektion1_0_5.html"><button class="btn3">Weiter →</button></a>
             </div>
         </main>
     </div>
@@ -159,6 +156,49 @@
             }
             updateProgress();
         };
+
+        const showCookie02 = () => {
+            document.getElementById('cookie-01').style.display = 'none';
+            document.getElementById('cookie-02').style.display = 'block';
+            hideHintsAfterDelay();
+        }
+
+        // Initial versteckt den cookie-02
+        document.getElementById('cookie-02').style.display = 'none';
+
+        document.getElementById('anpassen-button').addEventListener('click', showCookie02);
+
+        document.getElementById('zustimmen-button').addEventListener('click', function () {
+            document.getElementById('hinweis-text').style.display = 'flex';
+            console.log('zustimmen-button clicked');
+            hideHintsAfterDelay();
+        });
+
+        document.getElementById('alle-zulassen-button').addEventListener('click', function () {
+            console.log('alle-zulassen-button clicked');
+            document.getElementById('hinweis-text-2').style.display = 'flex';
+            hideHintsAfterDelay();
+        });
+
+        document.getElementById('auswahl-erlauben-button').addEventListener('click', function () {
+            if (document.getElementById('slider2').checked || document.getElementById('slider3').checked || document.getElementById('slider4').checked) {
+                console.log('auswahl-erlauben-button clicked');
+                document.getElementById('hinweis-text-2').style.display = 'flex';
+            } else {
+                document.getElementById('hinweis-text-2').style.display = 'none';
+                alert('Super, du hast alles abgelehnt. Das ist auch eine Möglichkeit.');
+            }
+            hideHintsAfterDelay();
+        });
+
+        const hideHintsAfterDelay = () => {
+            console.log('hideHintsAfterDelay called');
+            setTimeout(function () {
+                console.log('Hiding hints');
+                document.getElementById('hinweis-text').style.display = 'none';
+                document.getElementById('hinweis-text-2').style.display = 'none';
+            }, 5000);
+        }
     </script>
 </body>
 
