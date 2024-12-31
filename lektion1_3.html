@@ -45,13 +45,25 @@
             <p style="margin-bottom: 32px;">Erstelle ein starkes Passwort, das dich sicher durch den Dschungel führt!
             </p>
 
-
+            <div style="display: flex; flex-direction: column; width: 400px;">
+                <label for="password">Passwort eingeben</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button class="btn1" type="button" onclick="checkPassword()">Passwortstärke testen</button>
         </main>
     </div>
 
 
     <script>
-
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            if (strongPasswordPattern.test(password)) {
+                alert('Das Passwort ist stark!');
+            } else {
+                alert('Das Passwort ist nicht stark genug. Es muss mindestens 8 Zeichen lang sein und Großbuchstaben, Kleinbuchstaben, Zahlen und Sonderzeichen enthalten.');
+            }
+        }
     </script>
 
 </body>
