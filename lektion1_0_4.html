@@ -1,211 +1,257 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moki</title>
-    <link rel="stylesheet" href="css/styles_content.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles_content.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="header-nav-link">
-            <a href="lektion1.html">← Zurück zum Lernpfad Informationen und Daten</a>
-        </nav>
+      <nav class="header-nav-link">
+        <a href="lektion1.html"
+          >← Zurück zum Lernpfad Informationen und Daten</a
+        >
+      </nav>
     </header>
 
     <div class="container">
-        <nav class="side-nav isExercise">
-            <small>Kapitel 1</small>
-            <h1>Persönliche Daten schützen</h1>
-            <a href="lektion1_0_1.html" class="btn2"><img src="img/icon/book.png" class="icon" alt="Icon 1">Was
-                sind perönliche Daten?</a>
-            <a href="lektion1_0_2.html" class="btn2">
-                <img src="img/icon/book.png" class="icon" alt="Icon 1">Was sollte ich besser schützen?
-            </a>
-            <a href="lektion1_0_3.html" class="btn2">
-                <img src="img/icon/book.png" class="icon" alt="Icon 1">Cookies, mmh lecker!
-            </a>
-            <a href="lektion1_0_4.html" class="btn2 isCurrent">
-                <img src="img/icon/exercise.png" class="icon" alt="Icon 1">Nur die guten Cookies auswählen
-            </a>
-            <a href="lektion1_0_5.html" class="btn2">
-                <img src="img/icon/book.png" class="icon" alt="Icon 1">Hilfreiche Tipps
-            </a>
-        </nav>
-        <main class="content">
-            <div class="heading_progress">
-                <h1>Nur die guten Cookies auswählen</h1>
-                <div class="progress">
-                    <label for="kapitel1_1">Fortschritt</label>
-                    <progress id="kapitel1_1" value="1" max="1"></progress>
-                </div>
+      <nav class="side-nav isExercise">
+        <small>Kapitel 1</small>
+        <h1>Persönliche Daten schützen</h1>
+        <a href="lektion1_0_1.html" class="btn2"
+          ><img src="img/icon/book.png" class="icon" alt="Icon 1" />Was sind
+          perönliche Daten?</a
+        >
+        <a href="lektion1_0_2.html" class="btn2">
+          <img src="img/icon/book.png" class="icon" alt="Icon 1" />Was sollte
+          ich besser schützen?
+        </a>
+        <a href="lektion1_0_3.html" class="btn2">
+          <img src="img/icon/book.png" class="icon" alt="Icon 1" />Cookies, mmh
+          lecker!
+        </a>
+        <a href="lektion1_0_4.html" class="btn2 isCurrent">
+          <img src="img/icon/exercise.png" class="icon" alt="Icon 1" />Nur die
+          guten Cookies auswählen
+        </a>
+        <a href="lektion1_0_5.html" class="btn2">
+          <img src="img/icon/book.png" class="icon" alt="Icon 1" />Hilfreiche
+          Tipps
+        </a>
+      </nav>
+      <main class="content">
+        <div class="heading_progress">
+          <h1>Nur die guten Cookies auswählen</h1>
+          <div class="progress">
+            <label for="kapitel1_1">Fortschritt</label>
+            <progress id="kapitel1_1" value="1" max="1"></progress>
+          </div>
+        </div>
+
+        <p>
+          Dir wird folgender Cookie-Banner angezeigt. Welchen Cookies solltest
+          du zustimmen? Das ist kein echter Cookie-Banner, du kannst also nichts
+          falsch machen.
+        </p>
+
+        <div id="cookie-01">
+          <div class="cookie-banner">
+            <h2>Wir möchten Ihre Zustimmung</h2>
+            <p id="cookie-text">
+              Über "Anpassen" oder die Datenschutz-Einstellungen am Seitenende
+              können Sie Ihre Zustimmung jederzeit anpassen, versagen oder
+              Verarbeitungen widersprechen, die auf Grundlage berechtigter
+              Interessen vorgenommen werden. Weitere Informationen finden Sie in
+              den Datenschutzhinweisen und im Impressum.
+            </p>
+            <div>
+              <button
+                id="anpassen-button"
+                style="background-color: white; color: black; cursor: pointer"
+              >
+                Anpassen
+              </button>
+              <button
+                id="zustimmen-button"
+                style="background-color: green; color: white; cursor: pointer"
+              >
+                Zustimmen
+              </button>
             </div>
+          </div>
+        </div>
 
-            <p>Dir wird folgender Cookie-Banner angezeigt. Welchen Cookies solltest du zustimmen? Das ist kein echter
-                Cookie-Banner, du kannst also nichts falsch machen.</p>
-
-
-            <div id="cookie-01">
-                <div class="cookie-banner">
-                    <h2>Wir möchten Ihre Zustimmung</h2>
-                    <p id="cookie-text">Über "Anpassen" oder die Datenschutz-Einstellungen am Seitenende können Sie Ihre
-                        Zustimmung jederzeit
-                        anpassen, versagen oder Verarbeitungen widersprechen, die auf Grundlage berechtigter Interessen
-                        vorgenommen werden.
-                        Weitere Informationen finden Sie in den Datenschutzhinweisen und im Impressum.</p>
-                    <div>
-                        <button id="anpassen-button"
-                            style="background-color: white; color: black; cursor: pointer;">Anpassen</button>
-                        <button id="zustimmen-button"
-                            style="background-color: green; color: white; cursor: pointer;">Zustimmen</button>
-                    </div>
-
-                </div>
-                <div id="hinweis-text" class="hint">
-                    <img src="img/hint.png" alt="Hinweis">
-                    <p>
-                        Du hast hier die Möglichkeit Anpassungen
-                        vorzunehmen. Das solltest du nutzen.
-                    </p>
-                </div>
+        <div id="cookie-02">
+          <div class="cookie-banner">
+            <h2>Ihre persönlichen Daten</h2>
+            <p id="cookie-text">
+              Helfen Sie uns, Ihnen ein besseres Weberlebnis zu bieten. Partner
+              setzen Cookies und sammeln Informationen von Ihrem Browser, um
+              Ihnen relevante Inhalte und Werbung zur Verfügung zu stellen.
+            </p>
+            <div class="sliders">
+              <div class="slider">
+                <label for="slider1">Notwendig</label>
+                <input type="checkbox" id="slider1" disabled checked />
+              </div>
+              <div class="slider">
+                <label for="slider2">Statistiken</label>
+                <input type="checkbox" id="slider2" checked />
+              </div>
+              <div class="slider">
+                <label for="slider3">Marketing</label>
+                <input type="checkbox" id="slider3" />
+              </div>
+              <div class="slider">
+                <label for="slider4">Präferenzen</label>
+                <input type="checkbox" id="slider4" />
+              </div>
             </div>
-
-            <div id="cookie-02">
-                <div class="cookie-banner">
-                    <h2>Ihre persönlichen Daten</h2>
-                    <p id="cookie-text">Helfen Sie uns, Ihnen ein besseres Weberlebnis zu bieten. Partner setzen Cookies
-                        und sammeln Informationen von Ihrem Browser, um Ihnen relevante Inhalte und Werbung zur
-                        Verfügung zu stellen.</p>
-                    <div class="sliders">
-                        <div class="slider">
-                            <label for="slider1">Notwendig</label>
-                            <input type="checkbox" id="slider1" disabled checked>
-                        </div>
-                        <div class="slider">
-                            <label for="slider2">Statistiken</label>
-                            <input type="checkbox" id="slider2" checked>
-                        </div>
-                        <div class="slider">
-                            <label for="slider3">Marketing</label>
-                            <input type="checkbox" id="slider3">
-                        </div>
-                        <div class="slider">
-                            <label for="slider4">Präferenzen</label>
-                            <input type="checkbox" id="slider4">
-                        </div>
-                    </div>
-                    <div>
-                        <button id="auswahl-erlauben-button"
-                            style="background-color: white; color: black; cursor: pointer; cursor: pointer;">Auswahl
-                            erlauben</button>
-                        <button id="alle-zulassen-button"
-                            style="background-color: green; color: white; cursor: pointer;">Alle
-                            zulassen</button>
-                    </div>
-
-                </div>
-                <div id="hinweis-text-2" class="hint">
-                    <img src="img/hint.png" alt="Hinweis">
-                    <p>
-                        Statistik-Cookies können Informationen darüber sammeln, wie lange und oft du die Webseite
-                        besuchst. Diese Cookies solltest du deaktivieren.
-                    </p>
-                </div>
+            <div>
+              <button
+                id="auswahl-erlauben-button"
+                style="background-color: white; color: black; cursor: pointer"
+              >
+                Auswahl erlauben
+              </button>
+              <button
+                id="alle-zulassen-button"
+                style="background-color: green; color: white; cursor: pointer"
+              >
+                Alle zulassen
+              </button>
             </div>
+          </div>
+        </div>
 
-            <div id="success-message" style="display: none; flex-direction: column;">
-                <div class="success">
-                    <img src="img/hint.png" alt="Hinweis">
-                    <p>Toll gemacht, diesen Cookies kannst du ohne Bedenken zustimmen!</p>
-                </div>
+        <div
+          id="message-container"
+          style="display: none; flex-direction: column"
+        >
+          <div class="info-message">
+            <img src="img/hint.png" alt="Hinweis" />
+            <p id="message-text"></p>
+          </div>
 
-                <div class="button-container">
-                    <a href="lektion1_0_5.html"><button class="btn3">Weiter →</button></a>
-                </div>
-            </div>
-
-
-        </main>
+          <div
+            class="button-container"
+            id="weiter-button"
+            style="display: none"
+          >
+            <a href="lektion1_0_5.html"
+              ><button class="btn3">Weiter →</button></a
+            >
+          </div>
+        </div>
+      </main>
     </div>
     <script>
-        window.onload = function () {
-            function getCookie(name) {
-                const value = `; ${document.cookie}`;
-                const parts = value.split(`; ${name}=`);
-                if (parts.length === 2) return parts.pop().split(";").shift();
-            }
-
-            function updateProgress() {
-                const userName = getCookie("name");
-
-                if (!userName) {
-                    window.location.href = "login.html";
-                    return;
-                }
-
-                const progressId = `kapitel1_1`;
-                const progressValue = getCookie(progressId) || 0;
-                const progressElement = document.getElementById(progressId);
-                if (progressElement) {
-                    progressElement.value = progressValue;
-                }
-            }
-            if (getCookie("name") === "max") {
-                document.cookie = `kapitel1_1=25; path=/;`;
-            }
-            updateProgress();
-        };
-
-        const showCookie02 = () => {
-            document.getElementById('cookie-01').style.display = 'none';
-            document.getElementById('cookie-02').style.display = 'block';
-            hideHintsAfterDelay();
+      window.onload = function () {
+        function getCookie(name) {
+          const value = `; ${document.cookie}`;
+          const parts = value.split(`; ${name}=`);
+          if (parts.length === 2) return parts.pop().split(";").shift();
         }
 
-        // Initial versteckt den cookie-02
-        document.getElementById('cookie-02').style.display = 'none';
+        function updateProgress() {
+          const userName = getCookie("name");
 
-        document.getElementById('anpassen-button').addEventListener('click', showCookie02);
+          if (!userName) {
+            window.location.href = "login.html";
+            return;
+          }
 
-        document.getElementById('zustimmen-button').addEventListener('click', function () {
-            document.getElementById('hinweis-text').style.display = 'flex';
-            console.log('zustimmen-button clicked');
-            hideHintsAfterDelay();
-        });
-
-        document.getElementById('alle-zulassen-button').addEventListener('click', function () {
-            console.log('alle-zulassen-button clicked');
-            document.getElementById('hinweis-text-2').style.display = 'flex';
-            hideHintsAfterDelay();
-        });
-
-        document.getElementById('auswahl-erlauben-button').addEventListener('click', function () {
-            if (document.getElementById('slider2').checked || document.getElementById('slider3').checked || document.getElementById('slider4').checked) {
-                console.log('auswahl-erlauben-button clicked');
-                document.getElementById('hinweis-text-2').style.display = 'flex';
-            } else {
-                document.getElementById('hinweis-text-2').style.display = 'none';
-                document.getElementById('success-message').style.display = 'flex';
-            }
-            hideHintsAfterDelay();
-        });
-
-        const hideHintsAfterDelay = () => {
-            console.log('hideHintsAfterDelay called');
-            setTimeout(function () {
-                console.log('Hiding hints');
-                document.getElementById('hinweis-text').style.display = 'none';
-                document.getElementById('hinweis-text-2').style.display = 'none';
-            }, 5000);
+          const progressId = `kapitel1_1`;
+          const progressValue = getCookie(progressId) || 0;
+          const progressElement = document.getElementById(progressId);
+          if (progressElement) {
+            progressElement.value = progressValue;
+          }
         }
+        if (getCookie("name") === "max") {
+          document.cookie = `kapitel1_1=25; path=/;`;
+        }
+        updateProgress();
+      };
+
+      function showMessage(message, isCorrect) {
+        const messageContainer = document.getElementById("message-container");
+        const messageText = document.getElementById("message-text");
+
+        messageText.innerHTML = message;
+        if (isCorrect) {
+          messageText.style.border = "2px solid green";
+          messageText.style.backgroundColor = "#ccffd2";
+        } else {
+          messageText.style.border = "2px solid red";
+          messageText.style.backgroundColor = "#ffcccc";
+        }
+
+        messageContainer.style.display = "flex";
+        hideHintsAfterDelay();
+      }
+
+      const showCookie02 = () => {
+        document.getElementById("cookie-01").style.display = "none";
+        document.getElementById("cookie-02").style.display = "block";
+        hideHintsAfterDelay();
+      };
+
+      // Initial versteckt den cookie-02
+      document.getElementById("cookie-02").style.display = "none";
+
+      document
+        .getElementById("anpassen-button")
+        .addEventListener("click", showCookie02);
+
+      document
+        .getElementById("zustimmen-button")
+        .addEventListener("click", function () {
+          showMessage(
+            "Achtung: </br> Bei Cookies gibt es verschiedene Arten, und du musst nicht allen zustimmen.",
+            false
+          );
+        });
+
+      document
+        .getElementById("alle-zulassen-button")
+        .addEventListener("click", function () {
+          showMessage("Achtung: falsch", false);
+        });
+
+      document
+        .getElementById("auswahl-erlauben-button")
+        .addEventListener("click", function () {
+          if (
+            document.getElementById("slider2").checked ||
+            document.getElementById("slider3").checked ||
+            document.getElementById("slider4").checked
+          ) {
+            showMessage(
+              "Achtung: </br> Statistik-Cookies können Informationen darüber sammeln, wie lange und oft du die Webseite besuchst. Diese Cookies solltest du deaktivieren.",
+              false
+            );
+          } else {
+            showMessage(
+              "Toll gemacht, diesen Cookies kannst du ohne Bedenken zustimmen!",
+              true
+            );
+          }
+        });
+
+      const hideHintsAfterDelay = () => {
+        setTimeout(function () {
+          document.getElementById("message-container").style.display = "none";
+        }, 5000);
+      };
     </script>
-</body>
-
+  </body>
 </html>
