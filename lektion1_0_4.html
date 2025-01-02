@@ -196,7 +196,6 @@
         }
 
         messageContainer.style.display = "flex";
-        hideHintsAfterDelay();
       }
 
       const showCookie02 = () => {
@@ -219,12 +218,14 @@
             "Achtung: </br> Bei Cookies gibt es verschiedene Arten, und du musst nicht allen zustimmen.",
             false
           );
+          hideHintsAfterDelay();
         });
 
       document
         .getElementById("alle-zulassen-button")
         .addEventListener("click", function () {
           showMessage("Achtung: falsch", false);
+          hideHintsAfterDelay();
         });
 
       document
@@ -244,6 +245,7 @@
               "Toll gemacht, diesen Cookies kannst du ohne Bedenken zustimmen!",
               true
             );
+            document.getElementById("weiter-button").style.display = "flex";
           }
         });
 
