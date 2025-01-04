@@ -386,16 +386,15 @@ progress[value]::-ms-fill {
 }
 
 .info-message > img {
-  width: 150px;
+  width: 20%;
 }
 
 .info-message > p {
+  width: 75%;
   color: black;
-  border: 2px;
+  border: 2px solid black;
   border-radius: 8px;
-  align-content: center;
   padding: 20px;
-  height: min-content;
   align-self: center;
 }
 
