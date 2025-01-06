@@ -39,6 +39,30 @@
 
             <div>
                 <div class="progress">
+                    <label for="kapitel0_1">Bearbeitete Kapitel</label>
+                    <progress id="kapitel0_1" value="0" max="100"></progress>
+                </div>
+                <div class="progress">
+                    <label for="kapitel0_2">Bearbeitete Übungen</label>
+                    <progress id="kapitel0_2" value="0" max="100"></progress>
+                </div>
+                <div class="progress">
+                    <label for="kapitel0_3">Bearbeitete Tests</label>
+                    <progress id="kapitel0_3" value="0" max="100"></progress>
+                </div><br>
+                <a href="lektion0.html"><button class="btn1">Los geht's →</button></a>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="img/box2_img.png" alt="Bild 3">
+                <h1>Sicherheit</h1>
+                <p>In dieser Lektion lernst du, was Daten und Informationen sind und welche Rolle sie im Internet
+                    spielen. Du erfährst, was über dich gespeichert wird und wie du Informationen richtig überprüfst.
+                </p>
+            </div>
+            <div>
+                <div class="progress">
                     <label for="kapitel1_1">Bearbeitete Kapitel</label>
                     <progress id="kapitel1_1" value="0" max="100"></progress>
                 </div>
@@ -50,13 +74,13 @@
                     <label for="kapitel1_3">Bearbeitete Tests</label>
                     <progress id="kapitel1_3" value="0" max="100"></progress>
                 </div><br>
-                <a href="lektion0.html"><button class="btn1">Los geht's →</button></a>
+                <a href="lektion1.html"><button class="btn1">Los geht's →</button></a>
             </div>
         </div>
         <div class="box">
             <div>
-                <img src="img/box2_img.png" alt="Bild 3">
-                <h1>Sicherheit</h1>
+                <img src="img/box3_img.png" alt="Bild 5">
+                <h1>Kommunikation & Verhalten</h1>
                 <p>In dieser Lektion lernst du, was Daten und Informationen sind und welche Rolle sie im Internet
                     spielen. Du erfährst, was über dich gespeichert wird und wie du Informationen richtig überprüfst.
                 </p>
@@ -74,13 +98,13 @@
                     <label for="kapitel2_3">Bearbeitete Tests</label>
                     <progress id="kapitel2_3" value="0" max="100"></progress>
                 </div><br>
-                <a href="lektion1.html"><button class="btn1">Los geht's →</button></a>
+                <a href="lektion2.html"><button class="btn1">Los geht's →</button></a>
             </div>
         </div>
         <div class="box">
             <div>
-                <img src="img/box3_img.png" alt="Bild 5">
-                <h1>Kommunikation & Verhalten</h1>
+                <a href="login.html"><img src="img/box4_img.png" alt="Bild 7"></a>
+                <h1>Kreativität & Verantwortung</h1>
                 <p>In dieser Lektion lernst du, was Daten und Informationen sind und welche Rolle sie im Internet
                     spielen. Du erfährst, was über dich gespeichert wird und wie du Informationen richtig überprüfst.
                 </p>
@@ -96,31 +120,7 @@
                 </div>
                 <div class="progress">
                     <label for="kapitel3_3">Bearbeitete Tests</label>
-                    <progress id="kapitel3_3" value="0" max="100"></progress>
-                </div><br>
-                <a href="lektion2.html"><button class="btn1">Los geht's →</button></a>
-            </div>
-        </div>
-        <div class="box">
-            <div>
-                <a href="login.html"><img src="img/box4_img.png" alt="Bild 7"></a>
-                <h1>Kreativität & Verantwortung</h1>
-                <p>In dieser Lektion lernst du, was Daten und Informationen sind und welche Rolle sie im Internet
-                    spielen. Du erfährst, was über dich gespeichert wird und wie du Informationen richtig überprüfst.
-                </p>
-            </div>
-            <div>
-                <div class="progress">
-                    <label for="kapitel4_1">Bearbeitete Kapitel</label>
-                    <progress id="kapitel4_1" value="0" max="100"></progress>
-                </div>
-                <div class="progress">
-                    <label for="kapitel4_2">Bearbeitete Übungen</label>
-                    <progress id="kapitel4_2" value="0" max="100"></progress>
-                </div>
-                <div class="progress">
-                    <label for="kapitel4_3">Bearbeitete Tests</label>
-                    <progress id="kapitel4_3" value="0" max="100"> </progress>
+                    <progress id="kapitel3_3" value="0" max="100"> </progress>
                 </div><br>
                 <a href="lektion3.html"><button class="btn1">Los geht's →</button></a>
             </div>
@@ -143,7 +143,7 @@
                     return;
                 }
 
-                for (let i = 1; i <= 4; i++) {
+                for (let i = 0; i <= 3; i++) {
                     for (let j = 1; j <= 3; j++) {
                         const progressId = `kapitel${i}_${j}`;
                         const progressValue = getCookie(progressId) || 0;
