@@ -116,6 +116,40 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Index End */
+
+.end {
+  height: 100%;
+}
+
+/* Outer Grid Container */
+.outer-grid {
+  display: grid;
+  grid-template-rows: 33% 66%;
+  gap: 0;
+  height: calc(100vh - 100px);
+}
+
+/* Obere Sektion */
+.upper-section {
+  gap: 40px;
+  background-color: #FFF1C7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Untere Sektion */
+.lower-section {
+  display: contents;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 
 /* Sidebar Styles */
 .side-nav {
@@ -195,7 +229,8 @@ nav ul li a {
   padding: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
 }
 
 
@@ -349,6 +384,23 @@ progress[value]::-ms-fill {
   text-align: left;
   width: 100%;
   margin: 8px 0;
+}
+
+
+.btn3 {
+  font-weight: 500;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 40px;
+  background: linear-gradient(to right, #f9b93c, #f49404);
+  color: white;
+  border: 1px solid white;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.btn3:hover {
+  border: 2px solid #f49404;
 }
 
 /* Cookie Banner */

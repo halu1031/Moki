@@ -138,6 +138,11 @@
             function updateProgress() {
                 const userName = getCookie("name");
 
+                if (userName == "anna") {
+                    window.location.href = "index_end.html";
+                    return;
+                }
+
                 if (!userName) {
                     window.location.href = "login.html";
                     return;
