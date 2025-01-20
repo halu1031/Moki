@@ -157,28 +157,6 @@
       updateProgress();
     };
 
-    function showMessage(message, isCorrect) {
-      const messageContainer = document.getElementById("message-container");
-      const messageText = document.getElementById("message-text");
-
-      messageText.innerHTML = message;
-      if (isCorrect) {
-        messageText.style.border = "2px solid green";
-        messageText.style.backgroundColor = "#ccffd2";
-      } else {
-        messageText.style.border = "2px solid red";
-        messageText.style.backgroundColor = "#ffcccc";
-      }
-
-      messageContainer.style.display = "flex";
-    }
-
-    const showCookie02 = () => {
-      document.getElementById("cookie-01").style.display = "none";
-      document.getElementById("cookie-02").style.display = "block";
-      hideHintsAfterDelay();
-    };
-
     // Initial versteckt den cookie-02
     document.getElementById("cookie-02").style.display = "none";
 
@@ -223,6 +201,28 @@
           document.getElementById("weiter-button").style.display = "flex";
         }
       });
+
+    function showMessage(message, isCorrect) {
+      const messageContainer = document.getElementById("message-container");
+      const messageText = document.getElementById("message-text");
+
+      messageText.innerHTML = message;
+      if (isCorrect) {
+        messageText.style.border = "2px solid green";
+        messageText.style.backgroundColor = "#ccffd2";
+      } else {
+        messageText.style.border = "2px solid red";
+        messageText.style.backgroundColor = "#ffcccc";
+      }
+
+      messageContainer.style.display = "flex";
+    }
+
+    const showCookie02 = () => {
+      document.getElementById("cookie-01").style.display = "none";
+      document.getElementById("cookie-02").style.display = "block";
+      hideHintsAfterDelay();
+    };
 
     const hideHintsAfterDelay = () => {
       setTimeout(function () {
